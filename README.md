@@ -1,51 +1,39 @@
-# 📦 ISARIC HUB SA Template - Repositório de Referência Técnica
+# 📦 ISARIC HUB SA – VERTEX Installer
 
-Este repositório serve como exemplo **didático e técnico** da estrutura padrão adotada pelos projetos da organização NOIS.
-Atualize o readme para reflita as informações corretas do projeto.
+## 🧠 Overview
 
-## 🧠 O que você encontra aqui:
-- Estrutura de diretórios
-- Configuração de CI/CD
-- Documentação com MkDocs
-- Testes automatizados
-- Padrões de `.env`, `.gitignore`, `pyproject.toml`, etc.
-- Checklist de limpeza para novos projetos
+- Directory structure  
+- PowerShell script to install **pyenv** & **Python 3.12.6** with VERTEX dependencies  
+- PowerShell script to verify installation (VERTEX, Python, pyenv, dependencies)  
+- VERTEX user license  
+- Inno Setup script for the installer  
+- File indicating VERTEX version  
+- Final installer executable  
 
-Ao criar um novo projeto, use este repositório como **template** e ajuste conforme necessário.
+## 📦 Project Structure
 
-## 📦 Estrutura
+- `src/`: Main code files 
+  - `output/`: Installer executable  
+- `tests/`: Automatic PowerShell test scripts  
+- `docs/`: Project documentation  
 
-- `src/`: Código fonte principal
-- `tests/`: Testes automatizados com `unittest`
-- `docs/`: Documentação gerada com MkDocs
-- `config/`: Arquivos `.env` para ambientes
+## 📚 Documentation
 
-## 📚 Documentação
+All docs were written manually (no third-party tools).  
+You can access them via the ISARIC website (link) or in the `docs/` folder.
 
-A documentação é gerada com [MkDocs](https://www.mkdocs.org/) e inclui:
+## ⚙️ Requirements
 
-- Referência de código com `mkdocstrings`
-- Diagramas em Mermaid
-- Guia de início rápido
+- Windows 11  
+- PowerShell ≥ 5.1 (ExecutionPolicy: RemoteSigned or Bypass)  
+- Administrator privileges  
 
-## ⚙️ Requisitos
+## 🚀 Usage
 
-- Python 3.10+
-- [pip](https://pip.pypa.io/en/stable/)
-- Ambiente virtual recomendado
+1. Download and unzip the release.  
+2. Run `output\VERTEX_Setup.exe`.  
 
-```bash
-python -m venv venv
-source venv/bin/activate  # ou venv\Scripts\activate no Windows
-pip install -r requirements.txt
+> You don’t need to clone the repository—only the executable is necessary.  
+> For a full walkthrough, see the guide on the ISARIC website (link).
 
-## ✅ Checklist de Limpeza Pós-Clonagem
 
-Após criar seu repositório a partir deste template:
-
-- [ ] Remover testes em `tests/` se não forem usados
-- [ ] Ajustar estrutura em `src/` conforme sua lógica de negócio
-- [ ] Atualizar ou apagar arquivos em `docs/` se necessário
-- [ ] Configurar `.env` a partir do `config/`
-- [ ] Revisar `README.md` com a descrição específica do projeto
-- [ ] Validar dependências e versões no `requirements.txt`
