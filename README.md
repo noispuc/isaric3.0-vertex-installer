@@ -165,4 +165,4 @@ This is the main data-processing function. Here, you will use IsaricAnalytics an
 
 ⚠️ The function must return an IsaricDraw object. Standard tables or arrays will not work.
 
-For a visual walkthrough, see the ISARIC website.
+For a visual walkthrough, see the [ISARIC website]().
